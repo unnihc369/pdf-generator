@@ -6,7 +6,9 @@ const OfferForm = () => {
 
   const generatePDF = () => {
     axios
-      .post("http://localhost:5000/generate-pdf", { name })
+      .post("https://offer-letter-generator-b5io.onrender.com/generate-pdf", {
+        name,
+      })
       .then((response) => {
         console.log(response.data);
       })
