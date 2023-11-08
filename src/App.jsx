@@ -17,9 +17,9 @@ const App = () => {
 
   const createAndDownloadOfferLetter = () => {
     axios
-      .post("http://localhost:5000/create-pdf", formData)
+      .post("https://pdf-generator-a0y2.onrender.com/create-pdf", formData)
       .then(() =>
-        axios.get("http://localhost:5000/fetch-pdf", {
+        axios.get("https://pdf-generator-a0y2.onrender.com/fetch-pdf", {
           responseType: "blob",
         })
       )
